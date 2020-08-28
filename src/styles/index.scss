@@ -1,0 +1,84 @@
+$primary-font-family: 'Noto Sans JP', sans-serif;
+$secondary-font-family: 'Open Sans', sans-serif;
+
+body  {
+  font-family: $primary-font-family;
+  background-color: #000000;
+
+}
+
+.bgc  {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.top-layout  {
+  padding-top: 114px;
+  padding-bottom: 150px;
+  h1 {
+    margin-bottom: 22px;
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    &::first-letter {
+      color: #FFC600;
+    }
+  }
+  p {
+    font-family: $secondary-font-family;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    &::first-letter {
+      color: #FFC600;
+    }
+  }
+  a {
+    font-family: $secondary-font-family;
+    color: #FFC600;
+    text-decoration-line: none;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+}
+
+.header  {
+  padding-top: 70px;
+  padding-bottom: 418px;
+  margin-left: 380px;
+  height: 654px;
+  width: 1198px;
+  background-image: url(../../public/img/bf-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  h2 {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    &::first-letter {
+      color: #FFC600;
+    }
+  }
+  a {
+    color: #FFC600;
+    font-size: 18px;
+    margin-right: 35px;
+    &:last-child  {
+      margin-right: 0;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.section-three  {
+  h3 {
+    font-size: 60px;
+    color: white;
+  }
+}
