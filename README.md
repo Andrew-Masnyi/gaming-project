@@ -1,1 +1,1 @@
-# gaming-projecy
+# gaming-project
