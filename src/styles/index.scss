@@ -1,0 +1,79 @@
+$primary-font-family: 'Noto Sans JP', sans-serif;
+$secondary-font-family: 'Open Sans', sans-serif;
+
+$first-letter-color: #FFC600;
+$color-light: whitesmoke;
+
+body  {
+  font-family: $primary-font-family;
+  background-color: #000000;
+}
+
+.bgc  {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.top-layout  {
+  padding-top: 114px;
+  padding-bottom: 150px;
+  h1 {
+    margin-bottom: 22px;
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    &::first-letter {
+      color: $first-letter-color;
+    }
+  }
+  p {
+    font-family: $secondary-font-family;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    &::first-letter {
+      color: $first-letter-color;
+    }
+  }
+  a {
+    font-family: $secondary-font-family;
+    color: $first-letter-color;
+    text-decoration-line: none;
+    &:hover {
+      color: $color-light;
+    }
+  }
+}
+
+.header  {
+    .head   {
+        padding-top: 70px;
+        background-image: url(../../public/img/bf-background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 654px;
+    }
+  h2 {
+    color: $color-light;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    b {
+        color: $first-letter-color;
+    }
+  }
+  a {
+    color: $first-letter-color;
+    font-size: 18px;
+    margin-right: 35px;
+    &:last-child  {
+      margin-right: 0;
+    }
+    &:hover {
+      color: $color-light;
+    }
+  }
+}
+
