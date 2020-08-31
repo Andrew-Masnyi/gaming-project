@@ -1,10 +1,12 @@
 $primary-font-family: 'Noto Sans JP', sans-serif;
 $secondary-font-family: 'Open Sans', sans-serif;
 
+$first-letter-color: #FFC600;
+$color-light: whitesmoke;
+
 body  {
   font-family: $primary-font-family;
   background-color: #000000;
-
 }
 
 .bgc  {
@@ -23,7 +25,7 @@ body  {
     font-size: 150px;
     font-weight: bold;
     &::first-letter {
-      color: #FFC600;
+      color: $first-letter-color;
     }
   }
   p {
@@ -32,53 +34,46 @@ body  {
     font-size: 20px;
     margin-bottom: 30px;
     &::first-letter {
-      color: #FFC600;
+      color: $first-letter-color;
     }
   }
   a {
     font-family: $secondary-font-family;
-    color: #FFC600;
+    color: $first-letter-color;
     text-decoration-line: none;
     &:hover {
-      color: whitesmoke;
+      color: $color-light;
     }
   }
 }
 
 .header  {
-  padding-top: 70px;
-  padding-bottom: 418px;
-  margin-left: 380px;
-  height: 654px;
-  width: 1198px;
-  background-image: url(../../public/img/bf-background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+    .head   {
+        padding-top: 70px;
+        background-image: url(../../public/img/bf-background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 654px;
+    }
   h2 {
-    color: white;
+    color: $color-light;
     font-size: 55px;
     font-weight: bold;
     margin-bottom: 60px;
-    &::first-letter {
-      color: #FFC600;
+    b {
+        color: $first-letter-color;
     }
   }
   a {
-    color: #FFC600;
+    color: $first-letter-color;
     font-size: 18px;
     margin-right: 35px;
     &:last-child  {
       margin-right: 0;
     }
     &:hover {
-      color: white;
+      color: $color-light;
     }
   }
 }
 
-.section-three  {
-  h3 {
-    font-size: 60px;
-    color: white;
-  }
-}
