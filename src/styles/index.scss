@@ -3,6 +3,7 @@ $secondary-font-family: 'Open Sans', sans-serif;
 
 $first-letter-color: #FFC600;
 $color-light: whitesmoke;
+$about-color: #717171;
 
 body  {
   font-family: $primary-font-family;
@@ -53,7 +54,7 @@ body  {
         background-image: url(../../public/img/bf-background.png);
         background-size: contain;
         background-repeat: no-repeat;
-        height: 654px;
+        height: 623px; //before 654
     }
   h2 {
     color: $color-light;
@@ -77,3 +78,60 @@ body  {
   }
 }
 
+.about  {
+    .container  {
+        padding-bottom: 110px;
+        .tittle {
+            padding-top: 36px;
+            padding-left: 55px;
+        }
+        padding-top: 36px;
+        background-color: $color-light; 
+        h4 {
+            color: $about-color;
+            font-size: 50px;
+            margin: 0;
+            padding-left: 10px;
+        }
+        h3 {
+            font-size: 80px;
+            line-height: 0.9;
+            &::first-letter {
+                color: $first-letter-color;
+            }
+        }
+        h6 {
+            font-size: 13px;
+        }
+    }
+    hr {
+        width: 140px;
+        margin-right: 95px;
+        &.vertical  {
+            width: 120px;
+        transform:rotate(90deg);
+        position: relative;
+        top: 50px;
+        left: 20px;
+        }
+    }
+    p {
+        font-size: 11px;
+        color: $about-color;
+    }
+    .agc-row    {
+        text-align: center;
+        padding-top: 72px;
+        padding-left: 200px;
+        padding-right: 200px;
+        p {
+            font-size: 8px;
+        }
+        h6 {
+            margin-bottom: 20px;
+        }
+        img {
+            margin-bottom: 24px;
+        }
+    }
+}
