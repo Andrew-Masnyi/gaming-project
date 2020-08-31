@@ -3,6 +3,8 @@ $secondary-font-family: 'Open Sans', sans-serif;
 
 $first-letter-color: #FFC600;
 $color-light: whitesmoke;
+$about-color: #717171;
+$line-color: #808080;
 
 body  {
   font-family: $primary-font-family;
@@ -53,7 +55,7 @@ body  {
         background-image: url(../../public/img/bf-background.png);
         background-size: contain;
         background-repeat: no-repeat;
-        height: 654px;
+        height: 623px; //before 654
     }
   h2 {
     color: $color-light;
@@ -77,3 +79,75 @@ body  {
   }
 }
 
+.about  {
+    .container  {
+        padding-bottom: 110px;
+        .tittle {
+            padding-top: 20px;
+            padding-left: 55px;
+        }
+        padding-top: 36px;
+        background-color: $color-light; 
+        h4 {
+            color: $about-color;
+            font-size: 50px;
+            margin: 0;
+            padding-left: 10px;
+        }
+        h3 {
+            font-size: 80px;
+            line-height: 0.9;
+            &::first-letter {
+                color: $first-letter-color;
+            }
+            &::after  {
+              display: block;
+              position: absolute;
+              width: 25%;
+              right: 36%;
+              bottom: -3%;
+              content: "";
+              height: 2px;
+              background-color: $line-color;
+              opacity: 0.3;
+            }
+        }
+        h6 {
+            font-size: 13px;
+        }
+    }
+    .text {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 0%;
+        height: 90%;
+        width: 2px;
+        background-color: $line-color;
+        opacity: 0.3;
+      }
+    }
+    p {
+        font-size: 11px;
+        color: $about-color;
+        margin: 0;
+    }
+    .agc-row    {
+        text-align: center;
+        padding-top: 72px;
+        padding-left: 200px;
+        padding-right: 200px;
+        p {
+            font-size: 8px;
+        }
+        h6 {
+            margin-bottom: 20px;
+        }
+        img {
+            margin-bottom: 24px;
+        }
+    }
+}
