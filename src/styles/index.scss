@@ -82,7 +82,7 @@ body  {
     .container  {
         padding-bottom: 110px;
         .tittle {
-            padding-top: 36px;
+            padding-top: 20px;
             padding-left: 55px;
         }
         padding-top: 36px;
@@ -99,10 +99,34 @@ body  {
             &::first-letter {
                 color: $first-letter-color;
             }
+            &::after  {
+              display: block;
+              position: absolute;
+              width: 140px;
+              right: 110px;
+              bottom: -3px;
+              content: "";
+              height: 2px;
+              background-color: #808080;
+              opacity: 0.3;
+            }
         }
         h6 {
             font-size: 13px;
         }
+    }
+    .text {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        height: 66%;
+        width: 2px;
+        background-color: #808080;
+        opacity: 0.3;
+      }
     }
     hr {
         width: 140px;
