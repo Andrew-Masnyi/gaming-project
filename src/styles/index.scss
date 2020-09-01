@@ -4,6 +4,7 @@ $secondary-font-family: 'Open Sans', sans-serif;
 $first-letter-color: #FFC600;
 $color-light: whitesmoke;
 $about-color: #717171;
+$line-color: #808080;
 
 body  {
   font-family: $primary-font-family;
@@ -102,12 +103,12 @@ body  {
             &::after  {
               display: block;
               position: absolute;
-              width: 30%;
-              right: 23%;
+              width: 25%;
+              right: 36%;
               bottom: -3%;
               content: "";
               height: 2px;
-              background-color: #808080;
+              background-color: $line-color;
               opacity: 0.3;
             }
         }
@@ -125,7 +126,7 @@ body  {
         left: 0%;
         height: 90%;
         width: 2px;
-        background-color: #808080;
+        background-color: $line-color;
         opacity: 0.3;
       }
     }
