@@ -7,6 +7,7 @@ $about-color: #717171;
 $line-color: #808080;
 
 body  {
+  width: 100%;
   font-family: $primary-font-family;
   background-color: #000000;
 }
@@ -150,4 +151,95 @@ body  {
             margin-bottom: 24px;
         }
     }
+}
+
+.featured-work  {
+  .container  {
+    background-color: $color-light;
+    h5 {
+      padding-left: 5%;
+      font-size: 50px;
+      &::first-letter {
+        color: $first-letter-color;
+      }
+      &::after  {
+        display: block;
+        position: absolute;
+        width: 21%;
+        left: 21%;
+        bottom: -3%;
+        content: "";
+        height: 2px;
+        background-color: $line-color;
+        opacity: 0.3;
+      }
+    }
+  }
+  .nav-pills {
+    .nav-item {
+      a {
+        font-size: 9px;
+        padding: 0;
+        margin-right: 16px;
+        margin-left: 16px;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        background-color: transparent;
+        color: black;
+        &.all {
+          margin-right: 50px;
+        }
+        &::before {
+          display: block;
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 0;
+          background-color: $first-letter-color;
+          transition: width .5s ease-in-out, left .5s ease-in-out;
+          left: 50%;
+          bottom: 0;
+        }
+        &::after  {
+          display: block;
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 0;
+          background-color: $first-letter-color;
+          transition: width .5s ease-in-out;
+          left: 50%;
+          bottom: 0;
+        }
+        &:hover::before {
+          width: 50%;
+          left: 0;
+        }
+        &:hover::after  {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .row-img  {
+    margin-top: 23px;
+    .nav  {
+      padding-left: 4%;
+      margin-bottom: 26px;
+    }
+    .col-img  {
+      .tab-pane {
+        .row  {
+          .col-xl-3  {
+            padding: 0;
+            .img-fluid  {
+              height: 267px;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
