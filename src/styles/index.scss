@@ -102,9 +102,9 @@ body  {
             &::after  {
               display: block;
               position: absolute;
-              width: 140px;
-              right: 110px;
-              bottom: -3px;
+              width: 30%;
+              right: 23%;
+              bottom: -3%;
               content: "";
               height: 2px;
               background-color: #808080;
@@ -120,28 +120,19 @@ body  {
         content: "";
         display: block;
         position: absolute;
-        top: 10px;
-        left: 0px;
-        height: 66%;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 0%;
+        height: 90%;
         width: 2px;
         background-color: #808080;
         opacity: 0.3;
       }
     }
-    hr {
-        width: 140px;
-        margin-right: 95px;
-        &.vertical  {
-            width: 120px;
-        transform:rotate(90deg);
-        position: relative;
-        top: 50px;
-        left: 20px;
-        }
-    }
     p {
         font-size: 11px;
         color: $about-color;
+        margin: 0;
     }
     .agc-row    {
         text-align: center;
