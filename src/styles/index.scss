@@ -7,7 +7,6 @@ $about-color: #717171;
 $line-color: #808080;
 
 body  {
-  width: 100%;
   font-family: $primary-font-family;
   background-color: #000000;
 }
@@ -157,7 +156,7 @@ body  {
   .container  {
     background-color: $color-light;
     h5 {
-      padding-left: 5%;
+      padding-left: 40px;
       font-size: 50px;
       &::first-letter {
         color: $first-letter-color;
@@ -176,7 +175,13 @@ body  {
     }
   }
   .nav-pills {
+    margin-top: 20px;
+    margin-bottom: 26px;
+    padding-left: 40px;
     .nav-item {
+      &:first-child {
+        margin-right: 35px;
+      }
       a {
         font-size: 9px;
         padding: 0;
@@ -187,9 +192,6 @@ body  {
         text-decoration: none;
         background-color: transparent;
         color: black;
-        &.all {
-          margin-right: 50px;
-        }
         &::before {
           display: block;
           position: absolute;
@@ -222,24 +224,9 @@ body  {
       }
     }
   }
-  .row-img  {
-    margin-top: 23px;
-    .nav  {
-      padding-left: 4%;
-      margin-bottom: 26px;
-    }
-    .col-img  {
-      .tab-pane {
-        .row  {
-          .col-xl-3  {
-            padding: 0;
-            .img-fluid  {
-              height: 267px;
-              width: 300px;
-            }
-          }
-        }
-      }
-    }
+  .img  {
+    height: 267px;
+    width: 25%;
+    float: left;
   }
 }
