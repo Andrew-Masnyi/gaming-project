@@ -5,10 +5,12 @@ $first-letter-color: #FFC600;
 $color-light: whitesmoke;
 $about-color: #717171;
 $line-color: #808080;
+$bgt-color: transparent;
+$background-color: #000000;
 
 body  {
   font-family: $primary-font-family;
-  background-color: #000000;
+  background-color: $background-color;
 }
 
 .bgc  {
@@ -190,8 +192,8 @@ body  {
         display: inline-block;
         position: relative;
         text-decoration: none;
-        background-color: transparent;
-        color: black;
+        background-color: $bgt-color;
+        color: $background-color;
         &::before {
           display: block;
           position: absolute;
@@ -224,9 +226,42 @@ body  {
       }
     }
   }
-  .img  {
-    height: 267px;
+  .box {
+    display: inline-flex;
+    position: relative;
     width: 25%;
     float: left;
+  }
+  .image  {
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $background-color;
+  }
+  
+  .box:hover .overlay {
+    opacity: 0.7;
+  }
+  .text {
+    color: $first-letter-color;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
