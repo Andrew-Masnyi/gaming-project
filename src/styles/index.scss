@@ -12,6 +12,15 @@ body  {
   font-family: $primary-font-family;
   background-color: $background-color;
 }
+h5 {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-size: 50px;
+}
+span {
+  font-size: 70px;
+}
 
 .bgc  {
   position: absolute;
@@ -97,6 +106,9 @@ body  {
             padding-left: 10px;
         }
         h3 {
+          position: relative;
+          display: inline-block;
+          width: auto;
             font-size: 80px;
             line-height: 0.9;
             &::first-letter {
@@ -105,9 +117,9 @@ body  {
             &::after  {
               display: block;
               position: absolute;
-              width: 25%;
-              right: 36%;
-              bottom: -3%;
+              width: 45%;
+              right: 0;
+              bottom: -15%;
               content: "";
               height: 2px;
               background-color: $line-color;
@@ -159,15 +171,14 @@ body  {
     background-color: $color-light;
     h5 {
       padding-left: 40px;
-      font-size: 50px;
       &::first-letter {
         color: $first-letter-color;
       }
       &::after  {
         display: block;
         position: absolute;
-        width: 21%;
-        left: 21%;
+        width: 50%;
+        right: 0;
         bottom: -3%;
         content: "";
         height: 2px;
@@ -256,5 +267,78 @@ body  {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+}
+
+.strategy {
+  .container  {
+    background-color: $color-light;
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    .header-text  {
+      margin-bottom: 40px;
+    }
+    h5 {
+      display: inline-block;
+      width: auto;
+      &::first-letter {
+        color: $first-letter-color;
+      }
+      &::after  {
+        right: 0;
+        display: block;
+        position: absolute;
+        content: "";
+        width: 55%;
+        height: 2px;
+        background-color: $line-color;
+        opacity: 0.3;
+      }
+    }
+    .strategy-content {
+      .row:nth-of-type(2n)  {
+          &>:first-child {
+            padding-left: 150px;
+            padding-right: 40px;
+          }
+          &>:last-child {
+            margin-left: -20px;
+          }
+      }
+      .row:nth-of-type(1) {
+          &>:last-child  {
+            margin-left: -65px;
+          }
+          &>:first-child  {
+            margin-left: 65px;
+          }
+      }
+      .row:nth-of-type(3) {
+          &>:last-child  {
+            margin-right: -65px;
+            padding-right: 180px;
+          }
+          &>:first-child  {
+            margin-left: 65px;
+          }
+      }
+      h6 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 38px;
+        display: inline-block;
+        span {
+          font-size: 50px;
+        }
+    }
+    p {
+      font-size: 11px;
+      margin-top: 26px;
+      &.subtitle {
+        font-weight: 600;
+      }
+    }
+  }
   }
 }
