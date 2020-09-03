@@ -5,10 +5,12 @@ $first-letter-color: #FFC600;
 $color-light: whitesmoke;
 $about-color: #717171;
 $line-color: #808080;
+$bgt-color: transparent;
+$background-color: #000000;
 
 body  {
   font-family: $primary-font-family;
-  background-color: #000000;
+  background-color: $background-color;
 }
 
 .bgc  {
@@ -150,4 +152,109 @@ body  {
             margin-bottom: 24px;
         }
     }
+}
+
+.featured-work  {
+  .container  {
+    background-color: $color-light;
+    h5 {
+      padding-left: 40px;
+      font-size: 50px;
+      &::first-letter {
+        color: $first-letter-color;
+      }
+      &::after  {
+        display: block;
+        position: absolute;
+        width: 21%;
+        left: 21%;
+        bottom: -3%;
+        content: "";
+        height: 2px;
+        background-color: $line-color;
+        opacity: 0.3;
+      }
+    }
+  }
+  .nav-pills {
+    margin-top: 20px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    .nav-item {
+      &:first-child {
+        margin-right: 35px;
+      }
+      a {
+        font-size: 9px;
+        padding: 0;
+        margin-right: 16px;
+        margin-left: 16px;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        background-color: $bgt-color;
+        color: $background-color;
+        &::before {
+          display: block;
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 0;
+          background-color: $first-letter-color;
+          transition: width .5s ease-in-out, left .5s ease-in-out;
+          left: 50%;
+          bottom: 0;
+        }
+        &::after  {
+          display: block;
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 0;
+          background-color: $first-letter-color;
+          transition: width .5s ease-in-out;
+          left: 50%;
+          bottom: 0;
+        }
+        &:hover::before {
+          width: 50%;
+          left: 0;
+        }
+        &:hover::after  {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .box {
+    display: inline-flex;
+    position: relative;
+    width: 25%;
+    float: left;
+  }
+  .image  {
+    height: auto;
+    width: 100%;
+  }
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $background-color;
+  }
+  
+  .box:hover .overlay {
+    opacity: 0.7;
+  }
+  .text {
+    color: $first-letter-color;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
