@@ -12,6 +12,9 @@ body  {
   font-family: $primary-font-family;
   background-color: $background-color;
 }
+h5 {
+  font-size: 50px;
+}
 
 .bgc  {
   position: absolute;
@@ -159,7 +162,6 @@ body  {
     background-color: $color-light;
     h5 {
       padding-left: 40px;
-      font-size: 50px;
       &::first-letter {
         color: $first-letter-color;
       }
@@ -256,5 +258,67 @@ body  {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+}
+
+.strategy {
+  .container  {
+    background-color: $color-light;
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    .header-text  {
+      margin-bottom: 40px;
+    }
+    h5 {
+      &::first-letter {
+        color: $first-letter-color;
+      }
+      &::after  {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 2px;
+        left: 18%;
+        background-color: $line-color;
+        opacity: 0.3;
+      }
+    }
+    h6 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 38px;
+      &.tittle-two  {
+        margin-bottom: 66px;
+      }
+    }
+    p {
+      font-size: 11px;
+      margin-top: 26px;
+      span {
+        font-weight: 600;
+      }
+    }
+    .text-two {
+      padding-left: 150px;
+      padding-right: 50px;
+    }
+    .text-three {
+      padding-right: 210px;
+      padding-left: 30px;
+    }
+    img {
+      position: relative;
+      &.pic1  {
+        left: 17%;
+      }
+      &.pic2  {
+        right: 3%;
+      }
+      &.pic3  {
+        left: 17%;
+      }
+    }
   }
 }
