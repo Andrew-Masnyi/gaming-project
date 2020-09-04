@@ -283,20 +283,28 @@ h5 {
         left: 18%;
         background-color: $line-color;
         opacity: 0.3;
+        
       }
     }
     h6 {
       font-size: 30px;
       font-weight: bold;
       margin-bottom: 38px;
-      &.tittle-two  {
-        margin-bottom: 66px;
+      display: inline-block;
+      &::first-letter {
+        font-size: 50px;
       }
+      // &.tittle-two  {
+      //   margin-bottom: 66px;
+      // }
+    }
+    h6:nth-of-type(3) {
+      color: red;
     }
     p {
       font-size: 11px;
       margin-top: 26px;
-      span {
+      &.subtitle {
         font-weight: 600;
       }
     }
@@ -309,15 +317,14 @@ h5 {
       padding-left: 30px;
     }
     img {
-      position: relative;
       &.pic1  {
-        left: 17%;
+        margin-left: 80px;
       }
       &.pic2  {
-        right: 3%;
+        margin-left: -20px;
       }
       &.pic3  {
-        left: 17%;
+        margin-left: 80px;
       }
     }
   }
