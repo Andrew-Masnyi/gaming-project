@@ -15,6 +15,9 @@ body  {
 h5 {
   font-size: 50px;
 }
+span {
+  font-size: 70px;
+}
 
 .bgc  {
   position: absolute;
@@ -162,6 +165,9 @@ h5 {
     background-color: $color-light;
     h5 {
       padding-left: 40px;
+      span {
+
+      }
       &::first-letter {
         color: $first-letter-color;
       }
@@ -286,20 +292,31 @@ h5 {
         
       }
     }
-    h6 {
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 38px;
-      display: inline-block;
-      &::first-letter {
-        font-size: 50px;
+    .strategy-content {
+      .row:nth-of-type(2n)  {
+        .col-6  {
+          &:first-child {
+            padding-left: 150px;
+            padding-right: 40px;
+          }
+        }
       }
-      // &.tittle-two  {
-      //   margin-bottom: 66px;
-      // }
-    }
-    h6:nth-of-type(3) {
-      color: red;
+      .row:nth-of-type(3) {
+        .col-6  {
+          &:last-child  {
+            padding-right: 180px;
+            padding-left: 30px;
+          }
+        }
+      }
+      h6 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 38px;
+        display: inline-block;
+        span {
+          font-size: 50px;
+        }
     }
     p {
       font-size: 11px;
@@ -308,24 +325,17 @@ h5 {
         font-weight: 600;
       }
     }
-    .text-two {
-      padding-left: 150px;
-      padding-right: 50px;
-    }
-    .text-three {
-      padding-right: 210px;
-      padding-left: 30px;
-    }
     img {
       &.pic1  {
-        margin-left: 80px;
+        margin-left: 65px;
       }
       &.pic2  {
         margin-left: -20px;
       }
       &.pic3  {
-        margin-left: 80px;
+        margin-left: 65px;
       }
     }
   }
+}
 }
