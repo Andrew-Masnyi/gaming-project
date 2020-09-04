@@ -13,6 +13,9 @@ body  {
   background-color: $background-color;
 }
 h5 {
+  position: relative;
+  display: inline-block;
+  width: auto;
   font-size: 50px;
 }
 span {
@@ -103,6 +106,9 @@ span {
             padding-left: 10px;
         }
         h3 {
+          position: relative;
+          display: inline-block;
+          width: auto;
             font-size: 80px;
             line-height: 0.9;
             &::first-letter {
@@ -111,9 +117,9 @@ span {
             &::after  {
               display: block;
               position: absolute;
-              width: 25%;
-              right: 36%;
-              bottom: -3%;
+              width: 45%;
+              right: 0;
+              bottom: -15%;
               content: "";
               height: 2px;
               background-color: $line-color;
@@ -165,17 +171,14 @@ span {
     background-color: $color-light;
     h5 {
       padding-left: 40px;
-      span {
-
-      }
       &::first-letter {
         color: $first-letter-color;
       }
       &::after  {
         display: block;
         position: absolute;
-        width: 21%;
-        left: 21%;
+        width: 50%;
+        right: 0;
         bottom: -3%;
         content: "";
         height: 2px;
@@ -277,19 +280,20 @@ span {
       margin-bottom: 40px;
     }
     h5 {
+      display: inline-block;
+      width: auto;
       &::first-letter {
         color: $first-letter-color;
       }
       &::after  {
+        right: 0;
         display: block;
         position: absolute;
         content: "";
-        width: 20%;
+        width: 55%;
         height: 2px;
-        left: 18%;
         background-color: $line-color;
         opacity: 0.3;
-        
       }
     }
     .strategy-content {
