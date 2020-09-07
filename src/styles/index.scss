@@ -298,20 +298,16 @@ span {
     }
     .strategy-content {
       .row:nth-of-type(2n)  {
-        .col-6  {
-          &:first-child {
+          &>:first-child {
             padding-left: 150px;
             padding-right: 40px;
           }
-        }
       }
       .row:nth-of-type(3) {
-        .col-6  {
-          &:last-child  {
+          &>:last-child  {
             padding-right: 180px;
             padding-left: 30px;
           }
-        }
       }
       h6 {
         font-size: 30px;
