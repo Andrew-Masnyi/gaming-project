@@ -342,3 +342,49 @@ span {
   }
   }
 }
+
+.services {
+  .container  {
+    background-image: url(../../public/img/services-bg.png);
+    background-repeat: no-repeat;
+    color: $color-light;
+    height: 478px;
+    h5 {
+      font-size: 30px;
+      &::first-letter {
+        color: $first-letter-color;
+      }
+      &::after  {
+        display: block;
+        position: absolute;
+        width: 50%;
+        right: 0;
+        content: "";
+        height: 2px;
+        background-color: $color-light;
+      }
+    }
+    .provided {
+      .row:nth-of-type(odd) {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        &>:first-child  {
+          margin-left: 300px;
+          margin-right: 70px;
+        }
+      }
+      .row:nth-of-type(even)  {
+        &>:first-child  {
+          margin-left: 300px;
+          margin-right: 70px;
+        }
+      }
+      h6 {
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+}
