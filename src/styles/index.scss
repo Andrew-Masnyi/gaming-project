@@ -354,3 +354,55 @@ span {
     }
   }
 }
+
+.team {
+  .container  {
+    background-color: $color-light;
+    padding: 85px 60px 100px 50px;
+  }
+  h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .members  {
+    margin-top: 35px;
+    text-align: center;
+    h6 {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+  }
+}
+
+.testimonials {
+  .container  {
+    color: $color-light;
+    padding-bottom: 130px;
+  }
+  p {
+    font-size: 13px;
+    padding-left: 91px;
+  }
+  h5 {
+    margin-bottom: 70px;
+    padding-top: 55px;
+    padding-left: 49px;
+    &::after  {
+      opacity: 1;
+    }
+  }
+  .member {
+    text-align: center;
+    margin-top: 100px;
+    h6 {
+      margin-top: 23px;
+    }
+    p {
+      padding: 0;
+    }
+  }
+}
