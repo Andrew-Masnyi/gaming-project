@@ -354,3 +354,32 @@ span {
     }
   }
 }
+
+.testimonials {
+  .container  {
+    color: $color-light;
+    padding-bottom: 130px;
+  }
+  p {
+    font-size: 13px;
+    padding-left: 91px;
+  }
+  h5 {
+    margin-bottom: 70px;
+    padding-top: 55px;
+    padding-left: 49px;
+    &::after  {
+      opacity: 1;
+    }
+  }
+  .member {
+    text-align: center;
+    margin-top: 100px;
+    h6 {
+      margin-top: 23px;
+    }
+    p {
+      padding: 0;
+    }
+  }
+}
