@@ -472,6 +472,9 @@ span {
   h5 {
     padding-left: 70px;
     margin-bottom: 18px;
+    span {
+      font-size: 55px;
+    }
     &::after  {
       background-color: $alt-line-color;
       opacity: 1;
@@ -515,6 +518,54 @@ span {
       }
       &::placeholder  {
         color: white;
+      }
+    }
+  }
+  .btn  {
+    display: block;
+    color: black;
+    border-radius: 0;
+    padding: 11px 39px 10px 31px;
+    margin-top: 22px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  p {
+    margin-left: 98px;
+    a {
+      margin-left: 20px;
+    }
+  }
+  a {
+    margin-bottom: 98px;
+    color: $alt-line-color;
+    margin-left: 98px;
+  }
+  .sn-icons {
+    padding-left: 98px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 60%;
+      left: 50px;
+      background-color: $color-light;
+    }
+    a {
+      margin-left: 0;
+      .icon {
+        margin-top: 20px;
+        display: inline-flex;
+        width: 5%;
+        &:hover {
+          background-color: $first-letter-color;
+          border-radius: 50%;
+        }
       }
     }
   }
